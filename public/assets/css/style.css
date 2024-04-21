@@ -1,0 +1,108 @@
+.bg-halaman {
+    background-color: #EFDBDB;
+}
+
+body {
+    display: grid;
+    place-items: center; /* Menengahkan secara horizontal dan vertikal */
+    min-height: 100vh; /* Untuk memastikan konten berada di tengah vertikal bahkan jika konten kurang dari tinggi layar */
+}
+
+.container-log {
+    background-color: #FAE3E3;
+    width: 942px;
+    height: 496px;
+    border-radius: 25px;
+    box-shadow: 0 5px;
+    margin: auto;
+    position: relative; /* Menambahkan posisi relatif */
+}
+
+.container-form {
+    background-color: #FDC4C4;
+    width: 442px;
+    height: 378px;
+    border-radius: 15px;
+    position: absolute; /* Menambahkan posisi absolut */
+    top: 50%; /* Posisikan di tengah vertikal */
+    right: 20px; /* Posisikan di sisi kanan */
+    transform: translateY(-50%); /* Koreksi posisi vertikal */
+}
+
+.gambar-container {
+    position: absolute;
+    max-width: 100%; /* Gambar tidak akan melebihi lebar container */
+    max-height: 100%; /* Gambar tidak akan melebihi tinggi container */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.logo-login {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text" i], input[type="password" i] {
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #7749F8;
+    border-radius: 10px;
+    width: 305px;
+    height: 48px; /* Sesuaikan dengan ketinggian input */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text" i]::placeholder,
+input[type="password" i]::placeholder {
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+
+.button {
+    display: block; /* Mengubah tombol menjadi elemen blok */
+    margin: 0 auto; /* Posisikan tombol di tengah secara horizontal */
+    background-color: #F65B77;
+    border-radius: 10px;
+    border: 1px #F65B77;
+    width: 137px;
+    height: 44px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #CE0025; /* Perubahan warna saat tombol di-hover */
+}
+
+.register {
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center; /* Menengahkan secara vertikal */
+    margin: 0 auto;
+    width: 100%;
+    height: 44px;
+    border-color: rgb(236 240 246);
+    border: 1px  #fff; /* Tambahkan solid agar border tampak */
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    
+}
+
+hr {
+    margin-top: 30px; /* Atur jarak ke atas */
+    margin-bottom: 10px; /* Atur jarak ke bawah */
+}
+
+.register span {
+    /* Stil untuk teks "Create New Account" */
+}

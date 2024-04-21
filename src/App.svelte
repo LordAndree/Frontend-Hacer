@@ -1,27 +1,14 @@
 <script>
-	import {Router, Route, Link} from "svelte-routing";
-	import LoginPage from "./routes/LoginPage.svelte";
-	import SignPage from "./routes/SignPage.svelte";
-	import DashboardPage from "./routes/DashboardPage.svelte";
+	import router from 'page';
+	import Home from './pages/Home.svelte';
+	import Login from './pages/Login.svelte';
+	
+	let page;
 
-	let defaultRoute = "/login";
-	if (window.location.pathname === "/") {
-		window.location.pathname = defaultRoute;
-	}
+	router("/", () => (page = Home));
+	router("/login", () => (page = Login));
 
-	// export let url="";
+	router.start();
 </script>
 
-<Router >
-	<!-- <nav>
-		<Link to="/login">Login</Link>
-		<Link to="/signup">Sign In</Link>
-		<Link to="/dashboard">Home</Link>
-	</nav> -->
-	<!-- <Redirect from="/" to="/login"/> -->
-	<!-- <div> -->
-		<Route path="/login" component={LoginPage}/> <!-- -->
-		<Route path="/signup" component={SignPage}/>
-		<Route path="/dashboard" component={DashboardPage}/>
-	<!-- </div> -->
-</Router>
+<svelte:component this={page} />

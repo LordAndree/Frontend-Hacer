@@ -1,5 +1,10 @@
+:root{
+    background-color: #EFDBDB;
+}
+
 .bg-halaman {
     background-color: #EFDBDB;
+    border-radius: 25px;
 }
 
 body {
@@ -27,6 +32,24 @@ body {
     top: 50%; /* Posisikan di tengah vertikal */
     right: 20px; /* Posisikan di sisi kanan */
     transform: translateY(-50%); /* Koreksi posisi vertikal */
+}
+
+.container-signup {
+    background-color: #FDC4C4;
+    width: 442px;
+    height: 435px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.floating-image {
+    position: absolute;
+    max-width: 57%; /* Gambar tidak akan melebihi lebar container */
+    bottom: -150px; /* Menyesuaikan jarak ke bawah */
+    left: -110px; /* Menyesuaikan jarak ke kiri */
 }
 
 .gambar-container {

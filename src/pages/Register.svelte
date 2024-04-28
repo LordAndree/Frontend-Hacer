@@ -13,7 +13,7 @@
                 <div class="input-wrapper">
                     <input type="password" name="password" placeholder="Password" required>
                 </div>
-                <button type="submit" class="button">DAFTAR</button>
+                <button type="submit" class="buttonLogin">DAFTAR</button>
                 <hr>
                 <a href="/login" class="register"> LOGIN SEKARANG </a>
             </form>

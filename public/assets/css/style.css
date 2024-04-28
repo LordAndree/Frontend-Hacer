@@ -13,6 +13,46 @@ body {
     min-height: 100vh; /* Untuk memastikan konten berada di tengah vertikal bahkan jika konten kurang dari tinggi layar */
 }
 
+
+/* CSS untuk kontainer */
+.mainContainer {
+    display: flex;
+    justify-content: center; /* Memposisikan konten di tengah secara horizontal */
+    align-items: center; /* Memposisikan konten di tengah secara vertikal */
+    height: 100vh; /* Memastikan tinggi kontainer sesuai tinggi viewport */
+    padding: 20px; /* Padding jika diperlukan */
+    background-color: #f0f0f0; /* Warna latar belakang (opsional) */
+}
+
+.containeruji {
+    display: flex;
+    height: 100vh;
+}
+.containertask1 {
+    width: 85%;
+    margin: 0 auto; /* Membuat kontainer berada di tengah */
+    border-radius: 10px; /* Sudut yang membulat */
+    background-color: #f0f0f0; /* Warna latar kontainer (opsional) */
+    padding: 20px; /* Padding jika diperlukan */
+    padding-top: 0%;
+}
+
+.containertask2 {
+    width: 85%;
+    height: fit-content;
+    margin: 0 auto; /* Membuat kontainer berada di tengah */
+    border-radius: 10px; /* Sudut yang membulat */
+    background-color: #f0f0f0; /* Warna latar kontainer (opsional) */
+    padding: 20px; /* Padding jika diperlukan */
+    padding-top: 0%;
+}
+
+.option-button {
+    width: auto;
+    height: fit-content;
+    margin-left: 80%;
+}
+
 .container-log {
     background-color: #FAE3E3;
     width: 942px;
@@ -44,6 +84,52 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+/* CSS untuk sidebar */
+.sidebar {
+    width: 15%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+
+/* CSS untuk text */
+.greeting {
+    font-weight: bold;
+    -webkit-text-stroke: black;
+    stroke-width: 5%;
+    border: black;
+    font-size: 25px;
+    color: black;
+    stroke: black;
+    stroke-width: 5%;
+    padding: 5%;
+}
+
+/* CSS untuk tombol */
+.buttontask{
+    justify-content: flex-end;
+    padding: 2%;
+}
+
+.buttonsidebar {
+    width: 100%; /* Atur lebar tombol sebagai 15% dari lebar kontainer */
+    height: 50px; /* Atur tinggi tombol sesuai kebutuhan */
+    margin-bottom: 20px; /* Jarak antara tombol */
+}
+
+
+/* CSS untuk konten */
+.content {
+    flex: 1; /* Konten mengambil sisa ruang */
+    background-color: #fff; /* Warna latar konten (opsional) */
+}
+
+
 
 .floating-image {
     position: absolute;
@@ -89,7 +175,7 @@ input[type="password" i]::placeholder {
 }
 
 
-.button {
+.buttonLogin {
     display: block; /* Mengubah tombol menjadi elemen blok */
     margin: 0 auto; /* Posisikan tombol di tengah secara horizontal */
     background-color: #F65B77;
@@ -126,6 +212,6 @@ hr {
     margin-bottom: 10px; /* Atur jarak ke bawah */
 }
 
-.register span {
-    /* Stil untuk teks "Create New Account" */
-}
+/* .register span {
+     Stil untuk teks "Create New Account" 
+} */

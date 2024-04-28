@@ -10,7 +10,7 @@
                 <div class="input-wrapper">
                     <input type="password" name="password" placeholder="Password" required>
                 </div>
-                <button type="submit" class="button">LOGIN</button>
+                <button type="submit" class="buttonLogin">LOGIN</button>
                 <hr>
                 <a href="/register" class="register"> Create New Account </a>
             </form>

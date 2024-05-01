@@ -1,76 +1,114 @@
-<!-- <script>
-    import Box from "./Box.svelte";
-</script>
-
 <style>
-    .taskcard1{
-        width: 85%;
-        height: 20px;
-        margin-top: 10px;
-        border-radius: 10px;
-        border: solid;
+    @import '../../css/stye.css';
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        position: relative; /* Tambahkan posisi relatif untuk container */
     }
 
-    .taskcard {
-        width: auto;
-        border-radius: 10px;
+    .centered-box-container {
+        display: flex;
+        flex-direction: column;
     }
 
-</style>
-
-<div class="taskcard">
-
-</div> -->
-
-
-<!-- CenteredBox.svelte -->
-
-<style>
     .centered-box {
         display: flex;
         align-items: center;
-        width: 80%;
-        height: 75px;
-        background-color: #f0f0f0;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: #E2E7FA;
         border-radius: 10px;
         padding: 10px;
         margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    hr {
         border: solid;
-        border-radius: 10px;
-        justify-content: space-between;
+        height: 3px;
+        background-color: #000000;
+        margin: 10px 0;
+        width: 100%;
     }
 
-    .text {
-        margin-right: 10px;
+    .title-todo {
+        font-weight: var(--fwmedium);
+        color: #000000;
+        font-size: 16px;
+        margin: 10px 5px -15px;
+        align-self: flex-start;
     }
 
-    .button {
-        width: 70px;
-        height: 30px;
-        background-color: #007bff;
+    .deskripsi-todo {
+        margin-top: 20px;
+    }
+
+    .badge {
+        display: flex;
+        align-items: center;
+        background-color: #dc3545;
         color: white;
-        border: none;
+        padding: 5px 10px;
         border-radius: 5px;
-        cursor: pointer;
-        margin: 5px;
+        margin-top: 10px;
+        margin-right: auto;
     }
 
-    .containerbutton{
-        width: 250px;
-        height: fit-content;
-        justify-content: flex-end;
+    .badge i {
+        margin-right: 5px;
+    }
+
+    .schedule {
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    .menu-icon {
+        margin-left: auto; /* Posisikan menu icon di sebelah kanan */
+        color: #007bff; /* Warna icon */
+        cursor: pointer; /* Tambahkan cursor pointer */
+        font-size: 16px; /* Ukuran icon */
+        position: relative; /* Tambahkan posisi relatif */
+    }
+
+    .menu-icon:hover {
+        color: #0056b3; /* Warna icon saat hover */
     }
 </style>
 
-<script>
-    export let buttonText1 = "Button 1";
-    export let buttonText2 = "Button 2";
-    export let buttonText3 = "Button 3";
-</script>
+<div class="container-main">
+    <div class="centered-box-container">
+        <h1 class="schedule">Schedule Today</h1>
+        <div class="centered-box">
+            <h1 class="title-todo">Makan Siang</h1>
+            <i class="menu-icon fas fa-bars"></i>
+            <hr>
+            <p class="deskripsi-todo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque expedita quia earum nostrum autem nam totam beatae, rerum esse? Placeat, illum ex in corrupti iste eaque enim totam tempora.</p>
+            <div class="badge">
+                <i class="fa fa-exclamation-triangle"></i> Urgent
+            </div>
+        </div>
 
-<div class="centered-box">
-    <h1 class="text">Makan malam</h1>
-    <button class="button">{buttonText1}</button>
-    <button class="button">{buttonText2}</button>
-    <button class="button">{buttonText3}</button>
+        <div class="centered-box">
+            <h1 class="title-todo">Makan Malam</h1>
+            <i class="menu-icon fas fa-bars"></i>
+            <hr>
+            <p class="deskripsi-todo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque expedita quia earum nostrum autem nam totam beatae, rerum esse? Placeat, illum ex in corrupti iste eaque enim totam tempora.</p>
+            <div class="badge">
+                <i class="fa fa-exclamation-triangle"></i> Urgent
+            </div>
+        </div>
+        <div class="centered-box">
+            <h1 class="title-todo">Fitnes</h1>
+            <i class="menu-icon fas fa-bars"></i>
+            <hr>
+            <p class="deskripsi-todo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque expedita quia earum nostrum autem nam totam beatae, rerum esse? Placeat, illum ex in corrupti iste eaque enim totam tempora.</p>
+            <div class="badge">
+                <i class="fa fa-exclamation-triangle"></i> Urgent
+            </div>
+        </div>
+    </div>
 </div>

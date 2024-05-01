@@ -24,7 +24,7 @@
 </script>
 <Container>
     <Nav></Nav>
-    <Form widthBox="50%" form={signInForm}></Form>
+    <Form widthBox="100%" form={signInForm}></Form>
 </Container>
 
 <NavTest></NavTest>

@@ -4,6 +4,7 @@
     import Container from '$lib/components/global/Container.svelte';
 </script>
 
+
 <Container>
     <Nav></Nav>
 </Container>

@@ -1,4 +1,4 @@
-<div class="sidebar">
+  <div class="sidebar">
   <!-- Tombol Home dengan ikon Font Awesome -->
   <button class="buttonsidebar">
     <i class="fas fa-home"></i> Home

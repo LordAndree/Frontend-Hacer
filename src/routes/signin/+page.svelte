@@ -2,7 +2,7 @@
     import Nav from '$lib/components/Nav.svelte';
     import Form from '$lib/components/Form.svelte';
   import NavTest from '$lib/components/NavTest.svelte';
-  import Container from '$lib/components/global/Container.svelte';
+  import Container from '$lib/components/global/Container.svelte';2
 
     let signInForm = {
         title: 'get ready for the bussyness?',
@@ -20,7 +20,7 @@
 </script>
 <Container>
     <Nav></Nav>
-    <Form widthBox="50%" form={signInForm}></Form>
+    <Form widthBox="95%" form={signInForm} justify-self="center"></Form>
 </Container>
 
 <NavTest></NavTest>

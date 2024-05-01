@@ -13,8 +13,9 @@
 <div class="container-wrapper">
   <Sidebar></Sidebar>
   <div class="containeruji">
-    <button class="add-button">+</button>
     <Task></Task>
+    <br><br>
+    <button class="add-button">+</button>
   </div>
 </div>
 
@@ -29,7 +30,7 @@
 
   .containeruji {
     width: 1300px;
-    height: 800px;
+    height: fit-content;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
@@ -37,6 +38,8 @@
     position: relative;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 2%;
+    margin-bottom: 20px;
   }
 
   .add-button {

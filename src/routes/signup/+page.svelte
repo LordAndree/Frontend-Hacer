@@ -8,15 +8,15 @@
         title: 'let me know about you...',
         items: [{
             id: 'name',
-            label: 'full name',
+            label: 'Full Name',
             type: 'text'
         }, {
             id: 'uname',
-            label: 'username',
+            label: 'Username',
             type: 'text'
         }, {
             id: 'passwd',
-            label: 'password',
+            label: 'Password',
             type: 'password'
         }],
         buttonText: 'Sign Up'

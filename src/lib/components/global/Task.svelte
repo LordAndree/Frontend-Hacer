@@ -110,5 +110,23 @@
                 <i class="fa fa-exclamation-triangle"></i> Urgent
             </div>
         </div>
+        <div class="centered-box">
+            <h1 class="title-todo">Makan Malam</h1>
+            <i class="menu-icon fas fa-bars"></i>
+            <hr>
+            <p class="deskripsi-todo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque expedita quia earum nostrum autem nam totam beatae, rerum esse? Placeat, illum ex in corrupti iste eaque enim totam tempora.</p>
+            <div class="badge">
+                <i class="fa fa-exclamation-triangle"></i> Urgent
+            </div>
+        </div>
+        <div class="centered-box">
+            <h1 class="title-todo">Fitnes</h1>
+            <i class="menu-icon fas fa-bars"></i>
+            <hr>
+            <p class="deskripsi-todo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque expedita quia earum nostrum autem nam totam beatae, rerum esse? Placeat, illum ex in corrupti iste eaque enim totam tempora.</p>
+            <div class="badge">
+                <i class="fa fa-exclamation-triangle"></i> Urgent
+            </div>
+        </div>
     </div>
 </div>

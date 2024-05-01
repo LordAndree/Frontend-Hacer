@@ -8,11 +8,11 @@
         title: 'get ready for the bussyness?',
         items: [{
             id: 'uname',
-            label: 'username',
+            label: 'Username',
             type: 'text'
         }, {
             id: 'passwd',
-            label: 'password',
+            label: 'Password',
             type: 'password'
         }],
         buttonText: 'Sign In'
@@ -20,7 +20,7 @@
 </script>
 <Container>
     <Nav></Nav>
-    <Form widthBox="50%" form={signInForm}></Form>
+    <Form widthBox="100%" form={signInForm}></Form>
 </Container>
 
 <NavTest></NavTest>

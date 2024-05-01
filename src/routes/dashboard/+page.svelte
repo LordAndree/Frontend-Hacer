@@ -8,7 +8,6 @@
 </script>
 
 <Container>
-  <Nav></Nav>
 </Container>
 
 <Dash>
@@ -27,4 +26,3 @@
 </Box> -->
 
 
-<NavTest></NavTest>

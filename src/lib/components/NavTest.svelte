@@ -3,9 +3,12 @@
 </script>
 
 <div style="position: absolute; bottom: 0; width: 100%;">
-    <Box width=10% color="#FDC4C4">
-        <nav>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container footer">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <a href="/dashboard">Dashboard</a>
-        </nav>
-    </Box>
+          </div>
+        </div>
+      </nav>
 </div>
+

@@ -17,13 +17,14 @@
 
   .sidebar {
     width: 280px;
-    height: 800px;
+    height: auto;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
   }
 
   .buttonsidebar {
